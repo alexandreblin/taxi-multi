@@ -26,6 +26,6 @@ Then define the backends a separate section:
 
 ```ini
 [multi]
-my_tempo_backend = tempo://jira_user_account_id:tempo_api_token@api.tempo.io/core/3/
-my_tipee_backend = tipee://app_name:app_private_key@instance.tipee.net/api/?person=person_id
+my_tempo_backend = tempo://[jira_user_account_id]:[tempo_api_token]@api.tempo.io/core/3/
+my_tipee_backend = tipee://[app_name]:[app_private_key]@[instance].tipee.net/api/?person=[person_id]
 ```
