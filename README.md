@@ -14,7 +14,7 @@ taxi plugin install multi
 Usage
 -----
 
-In your `.taxirc` file, use the `multi` protocol for your backend. The backends
+Run `taxi config` and use the `multi` protocol for your backend. The backends
 parameter is a comma-separated list of the backends you want to push to.
 
 ```ini
