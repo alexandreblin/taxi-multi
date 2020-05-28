@@ -10,6 +10,7 @@ class MultiBackend(BaseBackend):
 
         self.backends = []
         for backend_name in kwargs['options']['backends'].split(','):
+            # noinspection PyProtectedMember
             backend = plugins_registry._load_backend(self.get_backend_uri(backend_name), self.context)
             self.backends.append(backend)
 
@@ -18,7 +19,7 @@ class MultiBackend(BaseBackend):
             if backend == backend_name:
                 return uri
 
-        raise Exception(f'Cannot find backend {backend_name} in [multi]')
+        raise Exception(f"Cannot find backend `{backend_name}` in the configuration section `[multi]`.")
 
     def push_entry(self, date, entry):
         for backend in self.backends:

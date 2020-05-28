@@ -2,7 +2,7 @@ Multi backend for Taxi
 ======================
 
 This is a special "multi" backend for [Taxi](https://github.com/sephii/taxi).
-It allows pushing entries to multiple backends.
+It allows pushing your entries to multiple backends at once.
 
 Installation
 ------------
@@ -26,6 +26,6 @@ Then define the backends a separate section:
 
 ```ini
 [multi]
-my_tempo_backend = tempo://[jira_user_account_id]:[tempo_api_token]@api.tempo.io/core/3/
-my_tipee_backend = tipee://[app_name]:[app_private_key]@[instance].tipee.net/api/?person=[person_id]
+my_tempo_backend = tempo://...
+my_tipee_backend = tipee://...
 ```
